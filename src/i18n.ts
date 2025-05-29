@@ -38,34 +38,30 @@ const enTranslations = {
     interests: "Interests",
     educationItems: [
       {
-        degree: "Master's in Computer Science",
-        school: "Universidad Tecnológica",
-        year: "2018",
-      },
-      {
-        degree: "Bachelor's in Software Engineering",
-        school: "Instituto Tecnológico",
-        year: "2015",
-      },
+        degree: "Bachelor's in Telematics Engineering",
+        school: "Univerisdad del Caribe",
+        year: "2012"
+      }
     ],
     experienceItems: [
       {
-        position: "Senior Backend Developer",
-        company: "Tech Solutions Inc.",
-        period: "2020 - Present",
+        position: "Full Stack Developer",
+        company: "Freelance - Cancún Gurú",
+        period: "2024 - Present",
+        
       },
       {
-        position: "Backend Developer",
-        company: "Digital Innovations",
-        period: "2017 - 2020",
+        position: "Sr. Software Engineer",
+        company: "Vanco Payments Solutions",
+        period: "2018 - 2024",
       },
       {
-        position: "Junior Developer",
-        company: "StartUp Labs",
-        period: "2015 - 2017",
+        position: "Software Engineer",
+        company: "Consultoria Dual",
+        period: "2012 - 2018",
       },
     ],
-    interestItems: ["Cloud Architecture", "Performance Optimization", "Teaching", "Scratch", "Scrappy", "SQL", "Angular", "React", "Node.js"],
+    interestItems: ["Cloud Architecture", "Performance Optimization", "Scratch", "SQL", "Angular", "React", "Node.js", "Leadership", "Teaching"],
   },
   projects: {
     title: "Featured Projects",
@@ -187,7 +183,7 @@ const esTranslations = {
         period: "2012 - 2018",
       },
     ],
-    interestItems: ["Arquitectura Cloud", "Optimización de Rendimiento", "Enseñanza", "Scratch", "Scrappy"],
+    interestItems: ["Arquitectura Cloud", "Optimización de Rendimiento", "Scratch", "SQL", "Angular", "React", "Node.js", "Liderazgo", "Enseñanza"],
   },
   projects: {
     title: "Proyectos Destacados",
