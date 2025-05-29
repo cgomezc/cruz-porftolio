@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { Github, ExternalLink } from "lucide-react"
+import { Github } from "lucide-react"
 
 export default function ProjectsSection() {
     const { t } = useTranslation()

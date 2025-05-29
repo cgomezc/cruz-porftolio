@@ -3,13 +3,23 @@ import { useState, useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react"
 
+interface Testimonial {
+    // Define your testimonial structure here
+    name: string;
+    message: string;
+    author: string;
+    quote: string;
+    position: string;
+    company: string;
+    // Add other properties as needed
+}
+
 export default function TestimonialsSection() {
     const { t } = useTranslation()
-    const testimonials =
-    [];
-    // Array.isArray(t("testimonials.items", { returnObjects: true }))
-    //     ? t("testimonials.items", { returnObjects: true })
-    //     : []
+   const translationResult = t("testimonials.items", { returnObjects: true });
+const testimonials: Testimonial[] = Array.isArray(translationResult) 
+    ? translationResult as Testimonial[]
+    : [];
     const [currentIndex, setCurrentIndex] = useState(0)
 
     // Auto-rotate testimonials only if we have testimonials

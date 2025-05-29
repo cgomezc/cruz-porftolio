@@ -4,7 +4,7 @@ import { GraduationCap, Briefcase, Heart, Code, Database, Server } from "lucide-
 export default function AboutSection() {
     const { t } = useTranslation()
     const educationItems = Array.isArray(t("about.educationItems", { returnObjects: true }))
-        ? t("about.educationItems", { returnObjects: true })
+        ? t("about.educationItems", { returnObjects: true } )
         : []
 
     const experienceItems = Array.isArray(t("about.experienceItems", { returnObjects: true }))
@@ -57,7 +57,7 @@ export default function AboutSection() {
                                 <h3 className="text-xl font-bold">{t("about.education")}</h3>
                             </div>
                             <ul className="space-y-4">
-                                {educationItems.map((item, index) => (
+                                { Array.isArray(educationItems) && educationItems.map((item, index) => (
                                     <li key={index} className="border-l-2 border-emerald-400 pl-4 py-1">
                                         <p className="font-bold">{item.degree}</p>
                                         <p className="text-slate-300">{item.school}</p>
@@ -73,7 +73,7 @@ export default function AboutSection() {
                                 <h3 className="text-xl font-bold">{t("about.experience")}</h3>
                             </div>
                             <ul className="space-y-4">
-                                {experienceItems.map((item, index) => (
+                                {Array.isArray(experienceItems) &&  experienceItems.map((item, index) => (
                                     <li key={index} className="border-l-2 border-emerald-400 pl-4 py-1">
                                         <p className="font-bold">{item.position}</p>
                                         <p className="text-slate-300">{item.company}</p>
@@ -89,7 +89,7 @@ export default function AboutSection() {
                                 <h3 className="text-xl font-bold">{t("about.interests")}</h3>
                             </div>
                             <div className="flex flex-wrap gap-2">
-                                {interestItems.map((interest, index) => (
+                                { Array.isArray(interestItems) &&  interestItems.map((interest, index) => (
                                     <span key={index} className="bg-slate-600 px-3 py-1 rounded-full text-sm">
                     {interest}
                   </span>
