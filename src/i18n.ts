@@ -2,6 +2,7 @@ import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
 import LanguageDetector from "i18next-browser-languagedetector"
 
+
 // English translations
 const enTranslations = {
   name: {
@@ -22,11 +23,15 @@ const enTranslations = {
   skills: {
     title: "Technical Skills",
   },
-  mission: "Building robust, scalable backend solutions that power the digital world.",
+  mission: {
+    title: "My Purpose",
+    text: "I believe in turning ideas into impact—crafting technology that empowers, educates, and uplifts. As a Full Stack Developer, Christian, and advocate for children''s education tech, I build with purpose—where code meets compassion, and innovation serves the next generation. Let’s create a better future—one line of code at a time.",
+    tagline: "Code with purpose. Build for impact..",
+  },
   about: {
     title: "About Me",
     subtitle: "Backend Developer & Code Educator",
-    bio: "I'm a passionate backend developer with over 8 years of experience specializing in .NET technologies. My expertise lies in building scalable, high-performance APIs and microservices that power modern web applications. I enjoy solving complex problems and optimizing database performance to create efficient systems.",
+    bio: "I'm a passionate backend developer with over 10 years of experience specializing in .NET technologies. My expertise lies in building scalable, high-performance APIs and microservices that power modern web applications. I enjoy solving complex problems and optimizing database performance to create efficient systems.",
     bio2: "When I'm not coding, I share my knowledge as a code educator, helping others master the art of backend development. I believe in clean code, thorough testing, and continuous learning.",
     education: "Education",
     experience: "Experience",
@@ -60,7 +65,7 @@ const enTranslations = {
         period: "2015 - 2017",
       },
     ],
-    interestItems: ["Cloud Architecture", "Performance Optimization", "Teaching", "Open Source"],
+    interestItems: ["Cloud Architecture", "Performance Optimization", "Teaching", "Scratch", "Scrappy", "SQL", "Angular", "React", "Node.js"],
   },
   projects: {
     title: "Featured Projects",
@@ -144,45 +149,45 @@ const esTranslations = {
   skills: {
     title: "Habilidades Técnicas",
   },
-  mission: "Construyendo soluciones backend robustas y escalables que impulsan el mundo digital.",
+  mission: {
+    title: "Mi Propósito",
+    text: "Creo en transformar ideas en impacto, creando tecnología que empodera, educa y eleva. Como Desarrollador Full Stack, seguidor de Cristo y defensor de la tecnología educativa para niños, construyo con propósito, donde el código se encuentra con la compasión y la innovación sirve a la próxima generación. Creamos un futuro mejor, una línea de código a la vez.",
+    tagline: "Código con propósito. Construir para el impacto.",
+  },
   about: {
     title: "Sobre Mí",
     subtitle: "Desarrollador Backend & Educador de Código",
-    bio: "Soy un desarrollador backend apasionado con más de 8 años de experiencia especializado en tecnologías .NET. Mi experiencia radica en construir APIs escalables y de alto rendimiento y microservicios que impulsan aplicaciones web modernas. Disfruto resolviendo problemas complejos y optimizando el rendimiento de bases de datos para crear sistemas eficientes.",
+    bio: "Soy un desarrollador backend apasionado con más de 10 años de experiencia especializado en tecnologías .NET. Mi experiencia radica en construir APIs escalables y de alto rendimiento y microservicios que impulsan aplicaciones web modernas. Disfruto resolviendo problemas complejos y optimizando el rendimiento de bases de datos para crear sistemas eficientes.",
     bio2: "Cuando no estoy programando, comparto mi conocimiento como educador de código, ayudando a otros a dominar el arte del desarrollo backend. Creo en el código limpio, las pruebas exhaustivas y el aprendizaje continuo.",
     education: "Educación",
     experience: "Experiencia",
     interests: "Intereses",
     educationItems: [
+     
       {
-        degree: "Maestría en Ciencias de la Computación",
-        school: "Universidad Tecnológica",
-        year: "2018",
-      },
-      {
-        degree: "Licenciatura en Ingeniería de Software",
-        school: "Instituto Tecnológico",
-        year: "2015",
+        degree: "Ingeniería en Telemática",	
+        school: "Universidad del Caribe",
+        year: "2012",
       },
     ],
     experienceItems: [
       {
-        position: "Desarrollador Backend Senior",
-        company: "Tech Solutions Inc.",
-        period: "2020 - Presente",
+        position: "Full Stack Developer",
+        company: "Freelance-  Cancún Gurú",
+        period: "2024 - Presente",
       },
       {
-        position: "Desarrollador Backend",
-        company: "Digital Innovations",
-        period: "2017 - 2020",
+        position: "Sr. Software Engineer",
+        company: "Vanco payments solutions",
+        period: "2018 - 2024",
       },
       {
-        position: "Desarrollador Junior",
-        company: "StartUp Labs",
-        period: "2015 - 2017",
+        position: "Software Engineer",
+        company: "Consultoria Dual",
+        period: "2012 - 2018",
       },
     ],
-    interestItems: ["Arquitectura Cloud", "Optimización de Rendimiento", "Enseñanza", "Código Abierto"],
+    interestItems: ["Arquitectura Cloud", "Optimización de Rendimiento", "Enseñanza", "Scratch", "Scrappy"],
   },
   projects: {
     title: "Proyectos Destacados",

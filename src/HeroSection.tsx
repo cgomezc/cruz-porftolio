@@ -19,7 +19,7 @@ export default function HeroSection() {
     const { t, i18n } = useTranslation()
     const [typedText, setTypedText] = useState("")
     const [currentTextIndex, setCurrentTextIndex] = useState(0)
-  
+
     // Define texts to type based on current language
     const getTextsToType = () => [t("roles.dotnet"), t("roles.backend"), t("roles.educator")]
   
@@ -112,7 +112,7 @@ export default function HeroSection() {
   
         {/* Background code pattern */}
         <div className="absolute inset-0 opacity-5">
-          <pre className="text-xs sm:text-sm overflow-hidden h-full">
+          <pre className="text-xm sm:text-sm overflow-hidden h-full">
             {`
   using System;
   using Microsoft.AspNetCore.Mvc;
