@@ -16,10 +16,12 @@ interface Testimonial {
 
 export default function TestimonialsSection() {
     const { t } = useTranslation()
-   const translationResult = t("testimonials.items", { returnObjects: true });
-const testimonials: Testimonial[] = Array.isArray(translationResult) 
-    ? translationResult as Testimonial[]
-    : [];
+   //const translationResult = t("testimonials.items", { returnObjects: true });
+const testimonials: Testimonial[] = [];
+
+// Array.isArray(translationResult) 
+//     ? translationResult as Testimonial[]
+//     : [];
     const [currentIndex, setCurrentIndex] = useState(0)
 
     // Auto-rotate testimonials only if we have testimonials
